@@ -1,0 +1,11 @@
+<p>Simple Calculator</p>
+<div>
+    <input value="{{exprs}}" readonly />
+<table class="carea">
+    <tr class="trow">
+        <div *ngFor="let b of buttons; index as i;" class="cbutton">
+        <button type="button" value="{{b}}" (click)="onButtonClick(b)">{{ b }}</button>
+        </div>
+    </tr>
+</table>
+</div>
